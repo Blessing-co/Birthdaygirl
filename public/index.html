@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Four Eyes!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="content-wrapper">
+        <!-- Landing Page -->
+        <section id="landing" class="section active">
+            <div class="landing-content">
+                <h1>Happy Birthday, "Four Eyes"! 🤓🎉</h1>
+                <p>Scroll down if you can actually read this...</p>
+                <button class="btn next-btn" onclick="scrollToSection('chat')">Let's Go!</button>
+            </div>
+        </section>
+
+        <!-- Chat Section -->
+        <section id="chat" class="section">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-title">cronos & Four Eyes</div>
+                </div>
+                <div class="chat-box" id="chatBox">
+                    <!-- Messages will be injected here via JS -->
+                </div>
+                <button class="btn next-btn" onclick="scrollToSection('vision')">Next ➡️</button>
+            </div>
+        </section>
+
+        <!-- Vision Test Section -->
+        <section id="vision" class="section">
+            <div class="vision-container">
+                <h2>Eye Test 👓</h2>
+                <div id="visionText" class="blurry-text">
+                    <p class="tease-line">Wow, your glasses need an upgrade! 👓</p>
+                    <p class="tease-line">You really thought I wouldn't tease you today?</p>
+                    <p class="sweet-line hidden">But seriously, I hope you have an amazing birthday!</p>
+                    <p class="sweet-line hidden">You mean the world to me, my favorite four-eyes! ❤️</p>
+                </div>
+                <button id="visionBtn" class="btn">Can you see this?</button>
+                <button class="btn next-btn" style="margin-top: 20px;" onclick="scrollToSection('roast')">Next ➡️</button>
+            </div>
+        </section>
+
+        <!-- Random Roast Generator -->
+        <section id="roast" class="section">
+            <div class="roast-container">
+                <h2>Random Roast Generator 🔥</h2>
+                <p>Click the button for a mild, school-friendly roast.</p>
+                <div class="roast-box">
+                    <p id="roastMessage" class="hidden-roast">Click the button below!</p>
+                </div>
+                <button id="roastBtn" class="btn">Roast Me!</button>
+                <button class="btn next-btn" style="margin-top: 20px;" onclick="scrollToSection('final')">Next ➡️</button>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section id="final" class="section">
+            <div class="final-message-container fade-in-section">
+                <h2>Happy Birthday! 🎂</h2>
+                <div class="final-text">
+                    <p>Okay, okay, enough with the jokes! 😂</p>
+                    <p>I just wanted to take a moment to say how much I appreciate you.</p>
+                    <p>Beyond the glasses and the banter, you are an incredible person.</p>
+                    <p>Wishing you the happiest of birthdays, filled with love and joy!</p>
+                    <p>Have a wonderful day!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
